@@ -19,7 +19,12 @@ export default (appInfo: EggAppInfo) => {
   const bizConfig = {
     sourceUrl: `${appInfo.name}`
   };
-
+  config.mongoose = {
+    client: {
+      url: "mongodb://127.0.0.1/dict",
+      options: {}
+    }
+  };
   // the return config will combines to EggAppConfig
   return {
     ...config,
