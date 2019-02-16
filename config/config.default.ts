@@ -21,7 +21,7 @@ export default (appInfo: EggAppInfo) => {
   };
   config.mongoose = {
     client: {
-      url: "mongodb://192.168.56.1/dict",
+      url: "mongodb://127.0.0.1/dict",
       options: {}
     }
   };
